@@ -1,6 +1,6 @@
 # Full stack project
 
-Hosted at : [Jmart Vercel App](https://j-mart-opal.vercel.app/)
+Hosted at : [Jmart Vercel App](https://j-mart-git-master-adikesava9706s-projects.vercel.app/)
 
 > Adi Kesava Reddy Koduru \
 > RA2211027010168 \
