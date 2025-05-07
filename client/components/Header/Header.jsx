@@ -13,10 +13,13 @@ function Header() {
   };
   const handleSigninSignup = () => {
     navigate("/login", { state: {} });
-  }
+  };
   const handleContactUs = () => {
     navigate("/contactus", { state: {} });
-  }
+  };
+  const handleAdmin = () => {
+    navigate("/admin");
+  };
   return (
     <header class="text-gray-400 bg-gray-900 body-font">
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -34,7 +37,7 @@ function Header() {
           <span class="ml-3 text-xl">JMart</span>
         </a>
         <div className="ml-10">
-        <SearchBar/>
+          <SearchBar />
         </div>
 
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -48,12 +51,31 @@ function Header() {
           <a
             class="mr-5 hover:text-white"
             style={{ cursor: "pointer" }}
+            onClick={handleAdmin}
+          >
+            Admin Panel
+          </a>
+          <a
+            class="mr-5 hover:text-white"
+            style={{ cursor: "pointer" }}
             onClick={handleProducts}
           >
             Products{" "}
           </a>
-          <a class="mr-5 hover:text-white" style={{cursor:'pointer'}} onClick={handleContactUs}>Contact us</a>
-          <a class="mr-5 hover:text-white" style={{cursor:'pointer'}} onClick={handleSigninSignup}>Sign Up / Sign in</a>
+          <a
+            class="mr-5 hover:text-white"
+            style={{ cursor: "pointer" }}
+            onClick={handleContactUs}
+          >
+            Contact us
+          </a>
+          <a
+            class="mr-5 hover:text-white"
+            style={{ cursor: "pointer" }}
+            onClick={handleSigninSignup}
+          >
+            Sign Up / Sign in
+          </a>
         </nav>
         <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
           Cart &nbsp;
